@@ -9,7 +9,7 @@ int main(){
     //If-satsen och allting inom måsvingarna kommer exekveras
     //om och endast om det booleska uttrycket är sant...
     if(a >= 0) {
-        a = a;
+        //Gör ingenting - a ska vara lika med a
     }
     //...annars kommer det inom "else" att exekveras
     else {

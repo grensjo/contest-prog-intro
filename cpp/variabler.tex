@@ -24,6 +24,8 @@ Såhär skulle det se ut:
 int x = 5;
 x = 42;
 int youJustLostTheGame = x+2; // = 44
+//Om vi nu ändrar x, är youJustLostTheGame fortfarande
+//44 - det ändras inte tillsammans med x.
 \end{lstlisting}
 
 Variabelnamn får innehålla bokstäver, siffror eller understreck, förutsatt att det inte börjar på en siffra samt inte är någon av de nyckelord som finns i C++.
@@ -38,7 +40,7 @@ char ettA = 'a';
 //till 2147483647 ( = 2^32-1)
 //En long long kan däremot spara tal mellan 
 //ungefär -10^18 (-2^64) till 10^18 (2^64-1)
-long long stortTal = 10000000000000;
+long long stortTal = 10000000000000LL;
 
 //Värden som bara kan vara sanna eller falska är också vanliga.
 //Dessa kallas för boolesker och kan ha antingen värdet true eller false.
@@ -48,7 +50,7 @@ bool isJohanAwesome = true;
 
 //Tal med decimaler sparas i doubles. Dessa kan hålla tal
 //i intervallet +/- 1.7^(+/- 308). Dock är de inte exakta, utan bara
-//en uppskattning
+//en uppskattning (c:a 16 siffrors noggrannhet)
 double speedOfAnUnladenSwallow = 15.6132;
 
 //Text-strängar sparar C++ med typen "string" som är en del

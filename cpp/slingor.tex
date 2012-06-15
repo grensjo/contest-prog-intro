@@ -12,7 +12,7 @@ Slingan använder sig av tre olika delar, separerade med semikolon, för att kon
 
 Om vi ska tolka koden på ren svenska har vi alltså en variabel vid namn $index = 0$. Så länge variabeln är under 100, så läser vi in ett nytt heltal och adderar till vår summa. Därefter ökar vi $index$ med 1. Vi ser alltså att slingan kommer exekveras hela 100 gånger - precis vad vi strävade efter!
 
-Slingor är väldigt användbara. Till exempel kanske vi vill skriva ut alla positiva multiplar av ett visst tal $n$ (dvs $n, 2n, 3n...$) mellan två tal $a$ och $b$. Vi vill alltså ha en variabel $index = a$ som initialisering. Inför varje iteration vill vi kontrollera att $index \le b$. Efter varje iteration vill vi hoppa till nästa multipel genom att öka index med $n$. Själva slingan skulle alltså blir ungefär \texttt{for(int index = a; index <= b; index = index + n)} och koden i sin helhet:
+Slingor är väldigt användbara. Till exempel kanske vi vill skriva ut alla positiva multiplar av ett visst tal $n$ (dvs $n, 2n, 3n...$) mellan två tal $a$ och $b$. Vi vill alltså ha en variabel $index = $ \emph{första multipeln större än $a$} som initialisering. Inför varje iteration vill vi kontrollera att $index \le b$. Efter varje iteration vill vi hoppa till nästa multipel genom att öka index med $n$.
 
 \lstinputlisting{cpp/slingor2.cpp}
 
