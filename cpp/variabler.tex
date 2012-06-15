@@ -1,0 +1,57 @@
+Datorns minne är egentligen bara en lång lista med ettor och nollor. Eftersom det dock är svårt att använda minnet i denna form låter C++ och operativsystemet oss att göra saker lite lättare. Det främsta exemplet är att vi istället för att referera till var i listan någonting finns, istället kan använda oss utav ett namn med bokstäver och låta datorn klura ut vilken plats i minnet vi menar - en variabel.
+
+Variabler liknar matematikens variabler, med vissa undantag. Främst behöver vi i C++ veta vad för sorts information vi sparar i en variabel. Är det ett heltal, ett decimaltal, en textsträng, eller något helt annat? Antag exempelvis att vi vill säga åt datorn att variablen $x$ är lika med talet 5.
+
+Detta gör vi med satsen:
+\begin{lstlisting}
+int x = 5;
+\end{lstlisting}
+
+Vi säger här två saker till datorn; först och främst att vi vill ha en variabel $x$ som är ett heltal (int står för engelskans integer, som betyder just heltal) och sedan att $x$ just nu ska ha värdet 5. När vi väl sagt vilken typ $x$ är varken behöver eller får vi säga det igen. En variabel kan alltså aldrig ändra typ efter att den deklarerats.
+
+Till skillnad från matematiska variabler kan vi dock ändra C++-variabler lite hur vi vill. Kanske ändrar vi oss och vill att $x$ ska vara lika med 42 istället. Då gör vi på föjande vis:
+
+\begin{lstlisting}
+int x = 5; //x är nu lika med 5
+x = 42; //Nu är x lika med 42! Observera avsaknaden av "int" i början
+\end{lstlisting}
+
+Kanske vill vi till och med skapa en ny variabel $youJustLostTheGame$ som ska vara lika med $x+2$.
+
+Såhär skulle det se ut:
+
+\begin{lstlisting}
+int x = 5;
+x = 42;
+int youJustLostTheGame = x+2; // = 44
+\end{lstlisting}
+
+Variabelnamn får innehålla bokstäver, siffror eller understreck, förutsatt att det inte börjar på en siffra samt inte är någon av de nyckelord som finns i C++.
+
+Det finns många fler exempel på de typer en variabel kan ha. Här visar vi exmpel på några deklarationer:
+
+\begin{lstlisting}
+//En char kan lagra ett tecken. Tecken skrivs omgivna av ''.
+char ettA = 'a';
+
+//En int kan bara spara tal i intervallet -2147483648 ( = -2^32)
+//till 2147483647 ( = 2^32-1)
+//En long long kan däremot spara tal mellan 
+//ungefär -10^18 (-2^64) till 10^18 (2^64-1)
+long long stortTal = 10000000000000;
+
+//Värden som bara kan vara sanna eller falska är också vanliga.
+//Dessa kallas för boolesker och kan ha antingen värdet true eller false.
+//Dock fuskar C++ och betraktar allt som inte är 0 som true
+//och 0 som false.
+bool isJohanAwesome = true;
+
+//Tal med decimaler sparas i doubles. Dessa kan hålla tal
+//i intervallet +/- 1.7^(+/- 308). Dock är de inte exakta, utan bara
+//en uppskattning
+double speedOfAnUnladenSwallow = 15.6132;
+
+//Text-strängar sparar C++ med typen "string" som är en del
+//av det inbyggda standardbiblioteket
+string herp = "derp";
+\end{lstlisting}

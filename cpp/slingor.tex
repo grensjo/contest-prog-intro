@@ -1,0 +1,23 @@
+Prova att skriva ett program som läser in och summerar 100 heltal.
+
+Och gör det nu utan att skriva 200 rader kod.
+
+Uppenbarligen har vi inte verktygen för att göra det på ett vettigt sätt än, men det ska vi få nu. Låt mig introducera dig till \emph{slingor}:
+
+\lstinputlisting{cpp/slingor.cpp}
+
+\texttt{for} berättar att vi vill upprepa något; precis som med if-satsen, det vi har inom måsvingar. 
+
+Slingan använder sig av tre olika delar, separerade med semikolon, för att kontrollera upprepningen. Den första delen kommer exekveras en gång innan slingan börjar. Mitten-uttrycket måste alltid bli ett booleskt uttryck. Inför varje iteration kommer slingan kontrollera om uttrycket blir \texttt{true} - i så fall körs iterationen. Om uttrycket istället råkar vara false avbryts slingan. Den slutgiltiga satsen körs efter varje iteration.
+
+Om vi ska tolka koden på ren svenska har vi alltså en variabel vid namn $index = 0$. Så länge variabeln är under 100, så läser vi in ett nytt heltal och adderar till vår summa. Därefter ökar vi $index$ med 1. Vi ser alltså att slingan kommer exekveras hela 100 gånger - precis vad vi strävade efter!
+
+Slingor är väldigt användbara. Till exempel kanske vi vill skriva ut alla positiva multiplar av ett visst tal $n$ (dvs $n, 2n, 3n...$) mellan två tal $a$ och $b$. Vi vill alltså ha en variabel $index = a$ som initialisering. Inför varje iteration vill vi kontrollera att $index \le b$. Efter varje iteration vill vi hoppa till nästa multipel genom att öka index med $n$. Själva slingan skulle alltså blir ungefär \texttt{for(int index = a; index <= b; index = index + n)} och koden i sin helhet:
+
+\lstinputlisting{cpp/slingor2.cpp}
+
+Vi behöver heller inte specifiera någon av satserna:
+
+\lstinputlisting{cpp/slingor3.cpp}
+
+Fundera på vad varje slinga kommer skriva ut innan du kör programmet!

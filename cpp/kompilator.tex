@@ -1,0 +1,13 @@
+När du skriver ett program i C++ skriver du läsbar text. När datorn sedan ska köra din kod måste denna först göras om till något datorn kan läsa. Detta är \emph{kompilatorns} jobb.
+
+Då det är väldigt jobbigt att få C++ att fungera på ett normalt sätt i Windows rekommenderar och antar vi att du kör någon Linux-variant. Exempelvis är Ubuntu (\texttt{http://www.ubuntu.com/}) lätt att installera. Det kan till och med installeras direkt från Windows mha något som kallas Wubi.
+
+\texttt{g++} är den kompilator som oftast används inom tävlingssammanhang, och den som antas när kod kompileras i detta häfte - mer specfikt version 4.6.3.
+
+För att kompilera en fil använder du kommandot
+
+\texttt{\$ g++ -Wall -O2 <filnamn>}
+
+i en terminal, eller kommandoprompt. En fil med namnet \texttt{a.out} kommer då att skapas - detta är filen som du ska köra med hjälp av
+
+\texttt{\$ ./a.out}

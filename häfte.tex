@@ -1,0 +1,85 @@
+\documentclass[10pt,a4paper]{report}
+
+% Package declarations
+
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[bookmarks]{hyperref}
+\usepackage{listings}
+
+% End package declrations
+
+% Listings configuration
+\lstset{%
+language=C++,
+showstringspaces=false,
+numbers=left
+}
+
+\lstset{literate=%
+{Ö}{{\"O}}1
+{Ä}{{\"A}}1
+{Ü}{{\"U}}1
+{ß}{{\ss}}2
+{ü}{{\"u}}1
+{ä}{{\"a}}1
+{ö}{{\"o}}1
+{å}{{\aa}}1
+{Å}{{\AA}}2
+}
+
+% End listings configuration
+
+\author{Johan Sannemo}
+\title{Introduktion till Tävlingsprogrammering}
+\date{Juni 2012}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\chapter{En snabbkurs i C++}
+
+\section{Grunder}
+\input{cpp/intro.tex}
+\subsection{Kompilatorer}
+\input{cpp/kompilator.tex}
+\subsection{Hello World!}
+\input{cpp/helloworld.tex}
+\subsection{Variabler och datatyper}
+\input{cpp/variabler.tex}
+\subsection{Input och output}
+\input{cpp/input.tex}
+\subsection{Operatorer}
+\input{cpp/operatorer.tex}
+
+\section{Kontrollflöde}
+\subsection{Villkorssatser}
+\input{cpp/villkor.tex}
+\subsection{Slingor}
+\input{cpp/slingor.tex}
+\subsection{Funktioner}
+
+\section{Datastrukturer}
+\subsection{Arrayer}
+\subsection{\texttt{struct}}
+\subsection{Bitset}
+
+\section{Standard Template Library}
+\subsection{\texttt{vector}}
+\subsection{Iteratorer}
+\subsection{\texttt{string}}
+\subsection{\texttt{map}}
+\subsection{\texttt{queue}}
+\subsection{\texttt{set}}
+\subsection{\texttt{sort}}
+\subsection{\texttt{next\_permutation}}
+\subsection{\texttt{iomanip}}
+
+\end{document}

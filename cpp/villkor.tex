@@ -1,0 +1,40 @@
+Än så länge har alla våra program följt en väldigt linjär struktur utan några hopp i källkoden. Det visar sig dock nödvändigt att kunna exekvera vissa satser beroende på om ett booleskt uttryck är sant eller inte.
+
+Antag exempelvis att vi har ett tal $a$ och vill räkna ut absolutbeloppet av det. Absolutbeloppet av ett tal x defineras som bekant såhär:
+
+$$
+|x| = 
+\left\{
+    \begin{array}{ll}
+        x & \mbox{om } x \geq 0 \\
+        -x & \mbox{annars}
+    \end{array}
+\right.
+$$
+
+Lyckligtvis är detta en barnlek att göra i C++. Ordet ``om'' i den matematiska definitionen ersätts av nyckelordet ``if'' i C++, och nyckelordet ``else'' fungerar som ``annars''.
+
+\lstinputlisting{cpp/villkor.cpp}
+
+Om vi istället har en mer komplex funktion, som:
+
+$$
+f(x) = 
+\left\{
+    \begin{array}{lll}
+        1 & \mbox{om } x = 1\\
+        \frac{x}{2} & \mbox{om } x \mbox{ jämnt}\\
+        3x+1 & \mbox{annars}
+    \end{array}
+\right.
+$$
+
+Vi kan då använda en "else-if-satsen". Om den första if-satsen inte var sann, kommer vi att kolla om varje else-if-sats i ordning är sann eller inte (om sådan finns). Annars kommer else-satsen exekveras (återigen, om sådan finns). Exempelvis skulle koden kunna se ut på följande vis:
+
+
+\lstinputlisting{cpp/villkor2.cpp}
+
+Innan vi går vidare tittar vi på ett sista exempel med villkor.
+
+\lstinputlisting{cpp/villkor3.cpp}
+
