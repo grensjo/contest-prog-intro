@@ -36,14 +36,14 @@ Det finns många fler exempel på de typer en variabel kan ha. Här visar vi exm
 //En char kan lagra ett tecken. Tecken skrivs omgivna av ''.
 char ettA = 'a';
 
-//En int kan bara spara tal i intervallet -2147483648 ( = -2^32)
-//till 2147483647 ( = 2^32-1)
+//En int kan bara spara tal i intervallet -2147483648 ( = -2^31)
+//till 2147483647 ( = 2^31-1)
 //En long long kan däremot spara tal mellan 
-//ungefär -10^18 (-2^64) till 10^18 (2^64-1)
+//ungefär -10^18 (-2^63) till 10^18 (2^63-1)
 long long stortTal = 10000000000000LL;
 
 //Värden som bara kan vara sanna eller falska är också vanliga.
-//Dessa kallas för boolesker och kan ha antingen värdet true eller false.
+//Dessa kallas för booleans och kan ha antingen värdet true eller false.
 //Dock fuskar C++ och betraktar allt som inte är 0 som true
 //och 0 som false.
 bool isJohanAwesome = true;
