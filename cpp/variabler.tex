@@ -26,7 +26,10 @@ x = 42;
 int youJustLostTheGame = x+2; // = 44
 //Om vi nu ändrar x, är youJustLostTheGame fortfarande
 //44 - det ändras inte tillsammans med x.
+x = 5;
 \end{lstlisting}
+
+Det är viktigt här att skilja på hur matematiska variabler skiljer sig från C++. Trots att vi precis sagt att $youJustLostTheGame$ är lika med $x+2$, kommer variabeln \emph{inte} ändras när vi i efterföljande sats sätter $x = 5$. Tilldelningsmodellen skiljer sig alltså från hur algebra fungerar, vilket ofta är förvirrande för nya programmerare.
 
 Variabelnamn får innehålla bokstäver, siffror eller understreck, förutsatt att det inte börjar på en siffra samt inte är någon av de nyckelord som finns i C++.
 
