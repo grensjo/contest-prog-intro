@@ -25,8 +25,8 @@ int main(){
 
     //Konjunktion ("och") finns också i C++ i form av &&-operatorn
     //Det gäller att a&&b == sant om och endast om både a och b är sanna
-    bool i = true&&true;
-    bool j = true&&false;
+    bool i = true && true;
+    bool j = true && false;
 
     //Disjunktion finns i två former. Dels den inklusiva disjunktionen "eller"
     //som skrivs ||...
@@ -35,8 +35,8 @@ int main(){
 
     //...men också i form av exklusiv disjunktion (det ena eller det andra,
     //men inte båda). Detta skrivs med ^
-    bool m = true^false;
-    bool n = false^false;
+    bool m = true ^ false;
+    bool n = false ^ false;
 
     //När ett booleskt värde skrivs ut betyder 0 falskt och 1 sant
     cout << a << ' ' << b << ' ' << c << ' ' << d << ' ';

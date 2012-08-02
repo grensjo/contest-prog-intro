@@ -12,10 +12,10 @@ int main(){
     }
     //Vi utnyttjar här att om resten vid division med 2 är 0,
     //är talet jämnt.
-    else if(a%2 == 0){
+    else if(a % 2 == 0){
         a = a / 2;
     } else {
-        a = 3*a + 1;
+        a = 3 * a + 1;
     }
     cout << "f(" << originalA << ") = " << a << endl;
 }

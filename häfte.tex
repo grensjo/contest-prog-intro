@@ -13,7 +13,7 @@
 \usepackage[bookmarks]{hyperref}
 \usepackage{listings}
 
-% End package declrations
+% End package declarations
 
 % Listings configuration
 \lstset{%
@@ -28,7 +28,7 @@ numbers=left
 {Ü}{{\"U}}1
 {ß}{{\ss}}2
 {ü}{{\"u}}1
-{ä}{{\"a}}1
+{ä}{{\"a}}1latexmk
 {ö}{{\"o}}1
 {å}{{\aa}}1
 {Å}{{\AA}}2
@@ -36,18 +36,24 @@ numbers=left
 
 % End listings configuration
 
+% Begin title, ToC
+
 \author{Johan Sannemo}
 \title{Introduktion till Tävlingsprogrammering}
-\date{Juli 2012}
+\date{Augusti 2012}
 
 \begin{document}
 \maketitle
 \tableofcontents
 
+% End title, ToC
+
+% Begin content
+
 \chapter{En snabbkurs i C++}
 
 \section{Grunder}
-\input{cpp/intro.tex}
+\input{cpp/intro.tex}	
 \subsection{Kompilatorer}
 \input{cpp/kompilator.tex}
 \subsection{Hello World!}
@@ -62,9 +68,10 @@ numbers=left
 \section{Kontrollflöde}
 \subsection{Villkorssatser}
 \input{cpp/villkor.tex}
-\subsection{Slingor}
-\input{cpp/slingor.tex}
+\subsection{Loopar}
+\input{cpp/loopar.tex}
 \subsection{Funktioner}
+\input{cpp/funktioner.tex}
 
 \section{Datastrukturer}
 \subsection{Arrayer}
@@ -81,5 +88,7 @@ numbers=left
 \subsection{\texttt{sort}}
 \subsection{\texttt{next\_permutation}}
 \subsection{\texttt{iomanip}}
+
+% End content
 
 \end{document}

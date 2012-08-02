@@ -1,0 +1,25 @@
+Prova att skriva ett program som läser in och summerar 100 heltal.
+
+Och gör det nu utan att skriva 200 rader kod.
+
+Uppenbarligen har vi inte verktygen för att göra det på ett vettigt sätt än, men det ska vi få nu. Låt mig introducera dig till \emph{loopar}:
+
+\lstinputlisting{cpp/loopar.cpp}
+
+\texttt{for} berättar att vi vill upprepa något; precis som med if-satsen, det vi har inom måsvingar. 
+
+Loopen använder sig av tre olika delar, separerade med semikolon, för att kontrollera upprepningen. Den första delen kommer exekveras en gång innan loopen börjar. Mitten-uttrycket måste alltid vara ett booleskt uttryck. Inför varje iteration kommer loopen kontrollera om uttrycket blir \texttt{true} - i så fall körs iterationen. Om uttrycket istället råkar vara false avbryts loopen. Den slutgiltiga satsen körs efter varje iteration.
+
+Om vi ska tolka koden på ren svenska har vi alltså en variabel vid namn $index = 0$. Så länge variabeln är under 100, så läser vi in ett nytt heltal och adderar till vår summa. Därefter ökar vi $index$ med 1. Vi ser alltså att loopen kommer exekveras hela 100 gånger - precis vad vi strävade efter!
+
+Loopar är väldigt användbara. Till exempel kanske vi vill skriva ut alla positiva multiplar av ett visst tal $n$ (dvs $n, 2n, 3n...$) mellan två tal $a$ och $b$. Vi vill alltså ha en variabel $index = $ \emph{första multipeln större än $a$} som initialisering. Inför varje iteration vill vi kontrollera att $index \le b$. Efter varje iteration vill vi hoppa till nästa multipel genom att öka index med $n$.
+
+\lstinputlisting{cpp/loopar2.cpp}
+
+Vi behöver heller inte specifiera någon av satserna:
+
+\lstinputlisting{cpp/loopar3.cpp}
+
+Fundera på vad varje slinga kommer skriva ut innan du kör programmet!
+
+Det är också värt att nämna, att det i C++ ett annat sätt att skriva \texttt{for(;<villkor>;) \{ ... \} }, nämligen \texttt{while(<villkor>) \{ ... \}}. Effekten blir densamma, men det senare är möjligen enklare att läsa.

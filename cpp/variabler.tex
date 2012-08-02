@@ -1,4 +1,4 @@
-Datorns minne är egentligen bara en lång lista med ettor och nollor. Eftersom det dock är svårt att använda minnet i denna form låter C++ och operativsystemet oss att göra saker lite lättare. Det främsta exemplet är att vi istället för att referera till var i listan någonting finns, istället kan använda oss utav ett namn med bokstäver och låta datorn klura ut vilken plats i minnet vi menar - en variabel.
+Datorns minne är egentligen bara en lång lista med ettor och nollor. Eftersom det dock är svårt att använda minnet i denna form låter C++ och operativsystemet oss att göra saker lite lättare. Det främsta exemplet är att vi istället för att referera till var i listan någonting finns, kan använda oss utav ett namn med bokstäver och låta datorn klura ut vilken plats i minnet vi menar - en variabel.
 
 Variabler liknar matematikens variabler, med vissa undantag. Främst behöver vi i C++ veta vad för sorts information vi sparar i en variabel. Är det ett heltal, ett decimaltal, en textsträng, eller något helt annat? Antag exempelvis att vi vill säga åt datorn att variablen $x$ är lika med talet 5.
 
@@ -43,6 +43,7 @@ char ettA = 'a';
 //till 2147483647 ( = 2^31-1)
 //En long long kan däremot spara tal mellan 
 //ungefär -10^18 (-2^63) till 10^18 (2^63-1)
+//Observera prefixet "LL ( = long long)" på stora tal
 long long stortTal = 10000000000000LL;
 
 //Värden som bara kan vara sanna eller falska är också vanliga.
