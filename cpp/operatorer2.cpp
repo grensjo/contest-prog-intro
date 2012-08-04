@@ -5,6 +5,8 @@ using namespace std;
 int main(){
     int tal = 5;
     //Likhetsoperatorn ger värdet sann om de två jämförda värdena är samma
+    //Observera att likhetsoperatorn består av dubbla likhetstecken, till
+    // skillnad från tilldelningsoperatorn.
     bool a = tal == 5;
 
     //På motsatt sätt fungerar olikhetsoperatorn
@@ -28,15 +30,15 @@ int main(){
     bool i = true && true;
     bool j = true && false;
 
-    //Disjunktion finns i två former. Dels den inklusiva disjunktionen "eller"
-    //som skrivs ||...
+    //Disjunktion finns i två former. Dels den inklusiva disjunktionen
+    //"eller" (ofta kallad "or") som skrivs ||...
     bool k = true || false;
     bool l = false || false;
 
-    //...men också i form av exklusiv disjunktion (det ena eller det andra,
-    //men inte båda). Detta skrivs med ^
+    //...men också i form av exklusiv disjunktion (ofta kallad "xor"):
+    //det ena eller det andra, men inte båda. Detta skrivs med ^
     bool m = true ^ false;
-    bool n = false ^ false;
+    bool n = true ^ true;
 
     //När ett booleskt värde skrivs ut betyder 0 falskt och 1 sant
     cout << a << ' ' << b << ' ' << c << ' ' << d << ' ';
