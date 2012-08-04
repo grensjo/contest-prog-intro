@@ -1,4 +1,6 @@
 #include <iostream>
+//När man använder sig av strängar i sina program bör man också inkludera
+//string ur standardbiblioteket.
 #include <string>
 
 using namespace std;

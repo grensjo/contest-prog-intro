@@ -1,4 +1,4 @@
-Nu har vi våra datatyper och variabler. Så, hur gör vi någonting vettigt med dem? Vi har redan sett exempel på två \texttt{operatorer} - additionsoperatorn \texttt{+} och tilldelningsoperatorn \texttt{=}.
+Nu har vi våra datatyper och variabler. Så, hur gör vi någonting vettigt med dem? Vi har redan sett exempel på två \emph{operatorer} - additionsoperatorn \texttt{+} och tilldelningsoperatorn \texttt{=}.
 
 Det finns ett antal aritmetiska operatorer i C++ som är väldigt bra att kunna:
 
@@ -10,4 +10,6 @@ Utöver dessa har vi en mängd operatorer som används för att skapa booleska u
 
 \lstinputlisting{cpp/operatorer2.cpp}
 
-Prova att leka med operatorerna och se hur de beter sig, speciellt för olika datatyper och kombinationer (hur fungerar division mellan ett heltal och ett flyttal?).
+Vi kan också kombinera tilldelningsoperatorn med de flesta andra operatorerna. Om vi vill addera $2$ till en variabel $x$ behöver vi inte skriva \texttt{x = x + 2}, utan kan istället använda operatorn \texttt{+=}. Det betyder alltså samma sak att skriva \texttt{x += 2} som att skriva \texttt{x = x + 2}. Det är inget speciellt med dessa operatorer, utan de gör bara din kod kortare och tydligare. För de två operationerna ``öka ett tal med ett'' och ``minska ett tal med ett'' finns också förkortningarna \texttt{x++} respektive \texttt{x--}.
+
+Prova att leka med operatorerna och se hur de beter sig, speciellt för olika datatyper och kombinationer (hur fungerar division mellan ett heltal och ett flyttal? Addition mellan en boolean och en boolean?).

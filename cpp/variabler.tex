@@ -31,9 +31,9 @@ x = 5;
 
 Det är viktigt här att skilja på hur matematiska variabler skiljer sig från C++. Trots att vi precis sagt att $youJustLostTheGame$ är lika med $x+2$, kommer variabeln \emph{inte} ändras när vi i efterföljande sats sätter $x = 5$. Tilldelningsmodellen skiljer sig alltså från hur algebra fungerar, vilket ofta är förvirrande för nya programmerare.
 
-Variabelnamn får innehålla bokstäver, siffror eller understreck, förutsatt att det inte börjar på en siffra samt inte är någon av de nyckelord som finns i C++.
+Variabelnamn får innehålla bokstäver, siffror eller understreck, förutsatt att det inte börjar på en siffra samt inte är något av de nyckelord som finns i C++.
 
-Det finns många fler exempel på de typer en variabel kan ha. Här visar vi exmpel på några deklarationer:
+Det finns många fler exempel på de typer en variabel kan ha. Här visar vi några deklarationer:
 
 \begin{lstlisting}
 //En char kan lagra ett tecken. Tecken skrivs omgivna av ''.
@@ -60,4 +60,26 @@ double speedOfAnUnladenSwallow = 15.6132;
 //Text-strängar sparar C++ med typen "string" som är en del
 //av det inbyggda standardbiblioteket
 string herp = "derp";
+\end{lstlisting}
+
+
+I exemplet tog vi upp att datatyperna har begränsningar på hur stora deras värden kan vara. Detta är viktigt att ha i åtanke, eftersom användning av en för liten datatyp kan vara en svårhittad felkälla i ett program. Om en \texttt{int} skulle råka bli för stor, kommer den \emph{overflowa}. Detta betyder att värdet börja om från $-2^{31}$ (eller $2^{31}-1$ om värdet blev för litet). Se därför till att alltid använda \texttt{long long} om du hanterar stora tal!
+
+Vi kan också deklarera variabler utan att tilldela dem ett värde: 
+
+\begin{lstlisting}
+int foo;
+bool bar;
+doouble baz;
+string merp;
+\end{lstlisting}
+
+De numeriska datatyperna, dvs \texttt{char, int, long long, double, bool} kommer att vara fyllda med slumpmässig data fram till dess att de tilldelas ett värde. En deklarerad sträng utan värde kommer dock automatiskt bli en tom sträng.
+
+Vill vi ha flera variabler av samma datatyp kan vi deklarera dem samtidigt:
+
+\begin{lstlisting}
+int a, b, c; //Deklarerar tre heltal med namnen a, b, c
+
+int x = 5, y; //x kommer ha värdet 5, y är odefinerad
 \end{lstlisting}

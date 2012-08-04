@@ -6,7 +6,7 @@ Börja med att skriva av koden tecken för tecken, spara den som t.ex. \texttt{h
 
 Vi ska nu gå igenom koden rad för rad.
 
-Den första raden, \texttt{\#include} säger att en annan källkodsfils ska inkluderas i vår fil - i detta fall \texttt{iostream}, som hanterar in- och utdata i C++.
+\texttt{\#include} på den första raden säger att en annan källkodsfils ska inkluderas i vår fil - i detta fall \texttt{iostream}, som hanterar in- och utdata i C++. Om vi inte hade inkluderat \texttt{iostream} i vårt lilla program hade vi inte kunnat skriva ut någonting. 
 
 Majoriteten av alla inbyggda funktioner i C++ är deklarerade inom vad som kallas en namnrymd (ungefär som ett gatunamn inom programmering) - i detta fall \texttt{std}. För att slippa behöva specifiera namnrymden så fort vi använder någonting ur standardbiblioteket kan vi istället säga att hela filen ska använda det med hjälp av rad 2. Denna rad används i princip alltid.
 
@@ -14,6 +14,6 @@ Rad 4 är början på main-funktionen. Det är i main-funktionen alla C++-progra
 
 Ibland vill man inkludera vanlig text i sina kodfiler för att dokumentera vad det är man gör. Då kan man använda \emph{kommentarer}. Det finns olika sorters kommentarer, och den vanligaste är den som inleds med \texttt{//} på varje rad.
 
-\texttt{cout << "Hello World!";} är en s k sats. Satser är helt enkelt uttryck som faktiskt \emph{gör} saker - i detta fall skriver ut en textsträng. Alla satser måste sluta med ett semikolon i C++.
+\texttt{cout << "Hello World!" << endl;} är en s k sats. Satser är helt enkelt uttryck som faktiskt \emph{gör} saker - i detta fall skriver ut en textsträng. Alla satser måste sluta med ett semikolon i C++.
 
-För att avsluta exekveringen av en funktion kan man använda sig av \texttt{return}-nyckelordet. I main-funktionen innebär detta också att programmet slutar köras. Att vi i detta exempel returnerar just 0 innebär att status-koden för programmet är 0. Detta brukar betyda att programmet exekverade utan något fel.
+För att avsluta exekveringen av en funktion kan man använda sig av \texttt{return}-nyckelordet. I main-funktionen innebär detta också att programmet slutar köras. Att vi i detta exempel returnerar just 0 innebär att status-koden för programmet är 0. Detta brukar betyda att programmet exekverade utan något fel. Om man inte returnerar något i sin main-funktion kommer kompilatorn anta att du ville returnera 0 i slutet av den, och oftast kommer vi helt enkelt strunta i att returnera något.

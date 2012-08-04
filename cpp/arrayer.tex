@@ -1,0 +1,15 @@
+För att spara många värden, t ex 1000 heltal, skulle vi just nu behöva deklarera 1000 variabler i vår kod. Vill vi sedan läsa in 1000 heltal skulle vi behöva kopiera vår kod 1000 gånger. Detta är självklart inte rimligt eftersom det är så pass vanligt att göra i programmering.  Exempelvis har datorskärmar idag har flera miljoner pixlar, och att deklarera en variabel för varje är inte genomförbart, speciellt då olika sorters skärmar har olika antal pixlar. 
+
+Istället finns \emph{arrayer}. En array är ungefär en lång rad av variabler som vi kan använda utan att behöva deklarera dem för sig. Syntaxet skiljer sig inte särskilt mycket från vanliga variabler:
+
+\lstinputlisting{cpp/arrayer.cpp}
+
+Indexen som används med arrayer är noll-baserade. Detta betyder att i en array med fem element är \texttt{array[0]} det första elementet och \texttt{array[4]} det sista.
+
+Arrayer behöver inte ha fasta storlekar heller, som vi ser i följande exempel:
+
+\lstinputlisting{cpp/arrayer2.cpp}
+
+När man deklarerar arrayer kan man också samtidigt ge dem värden. Syntaxet för det ser ut såhär:
+
+\lstinputlisting{cpp/arrayer3.cpp}

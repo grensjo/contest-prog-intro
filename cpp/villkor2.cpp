@@ -10,8 +10,8 @@ int main(){
     if(a == 1){
         a = a;
     }
-    //Vi utnyttjar här att om resten vid division med 2 är 0,
-    //är talet jämnt.
+    //Vi utnyttjar här att om resten vid division med 2 är 0
+    //så är talet jämnt.
     else if(a % 2 == 0){
         a = a / 2;
     } else {
