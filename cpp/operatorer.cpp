@@ -16,7 +16,7 @@ int main(){
     //Divisionsoperatorn delar två tal, men fungerar
     //lite speciellt på heltal. Istället för att ge
     //det exakta svaret (som inte alltid är ett heltal)
-    //avrundar den istället till närmsta heltal mot noll.
+    //så avrundar den till närmsta heltal mot noll.
     int heltalsKvot = a/b;
     //Restoperatorn räknar ut resten när ett tal a
     //delas med ett tal b
