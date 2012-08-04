@@ -1,24 +1,22 @@
 #include <iostream>
-//När man använder sig av strängar i sina program bör man också inkludera
-//string ur standardbiblioteket.
-#include <string>
 
 using namespace std;
 
 int main(){
-    int age;
-    cout << "Hur gammal var du detta datum 2012?" << endl;
-    cin >> age;
+    int a;
+    cout << "Mata mig med ett heltal, tack: ";
+    cin >> a;
 
-    string answer;
-    cout << "Har du fyllt år detta år? (ja/nej)" << endl;
-    cin >> answer;
-
-    if(answer == "ja"){
-        cout << "Du föddes år " << 2012-age << endl;
-    } else if(answer == "nej") {
-        cout << "Du föddes år " << 2012-age-1 << endl;
-    } else {
-        cout << "Jag sa ju åt dig att skriva ja eller nej.. :(";
+    bool delbartmed2 = (a%2 == 0);
+    bool delbartmed3 = (a%3 == 0);
+    
+    if(delbartmed2 && delbartmed3){
+        cout << "Ditt tal är delbart med både 2 och 3! :D" << endl;
+    } else if(delbartmed2){
+        cout << "Ditt tal är delbart med 2, men inte med 3." << endl;
+    } else if(delbartmed3){
+        cout << "Ditt tal är delbart med 3, men inte med 2." << endl;
+    } else{
+        cout << "Ditt tal är varken delbart med 2 eller 3. :(" << endl;
     }
 }
