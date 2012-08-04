@@ -1,0 +1,24 @@
+Vi har redan sett exempel på en funktion - \emph{main} - och ska nu gå in djupare på vad de är och varför de är användbara.
+
+Under avsnittet om villkorsuttryck såg vi hur man kunde beräkna absolutbeloppet av ett heltal med kod. Dock är det en aning omständligt att behöva skriva en if-sats varje gång man vill beräkna beloppet, och det är inte heller särskilt läsbart. Istället skulle man gärna vilja ha ett sätt att ta den operationen och ge den ett symboliskt namn, t ex $abs$. För att utföra operationen på ett tal $x$ skulle man sedan skriva $abs(x)$. Detta är precis vad funktioner gör:
+
+\begin{lstlisting}
+#include <iostream>
+
+using namespace std;
+
+int abs(int x){
+	if (x < 0) {
+		return -x;
+	} else {
+		return x;
+	}
+}
+
+int main(){
+	int tal;
+	cout <<  "Skriv ett tal: " << endl;
+	cin >> tal;
+	cout << "Beloppet av ditt tal är " << abs(x) << endl;
+}
+\end{lstlisting}
